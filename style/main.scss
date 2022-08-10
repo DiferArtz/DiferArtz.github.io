@@ -1,0 +1,463 @@
+// Main CSS for Difer's Portfolio
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Code+Pro:wght@200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Redacted+Script&display=swap');
+
+.font1{
+font-family: 'Redacted Script', cursive;
+}
+
+a{
+	all: unset;
+}
+
+a:hover{
+	cursor:pointer;
+}
+
+hr{
+	all: unset;
+}
+
+table{
+	border-collapse: collapse;
+}
+
+*{
+	font-family: 'Roboto', sans-serif;
+	font-family: 'Source Code Pro', monospace;
+	scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 5px;
+  background: #73003E;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+border-radius: 5px;
+  background: #FF008A;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #FF6FBD;
+}
+
+//vars
+$main1: #070507;
+$main2: #0B060B; 
+$yellow: #FFD800;
+$red: #FF008A;
+$purple: #B46AFF;
+
+@mixin centerize{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+}
+
+html {
+	height: 100%;
+	width: 100%;
+
+	@include centerize;
+
+	background-color: $main1; 
+}
+
+body {
+	height: 85%;
+	width: 90%;
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
+}
+
+.content{
+	width: 100%;
+	height: 100%;
+
+	@include centerize;
+	flex-flow: column;
+
+
+}
+
+.topbar{
+	display: flex;
+	width: 100%;
+	height: 20%;
+
+	@include centerize;
+}
+
+.topbar .mlogo{
+	@include centerize;
+
+	width: 15%;
+	height: 50%;
+
+}
+
+.topbar .mlogo img{
+	width: 100%;
+}
+
+.topbar .bb{
+	width: 50%;
+	height: 20%;
+	margin: 1%;
+
+	@include centerize;
+}
+
+.topbar .bb a{
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+
+	transition: 1s;
+	margin: 1%;
+	padding: 2%;
+
+	color: white;
+
+	border-style: solid;
+	border-width: 1px;
+	border-color: $yellow;
+	width: 25%;
+	text-align: center;
+
+	font-size: 2.5vh;
+}
+
+.topbar .bb a:hover{
+	transition: 1s;
+	color: white;
+
+	width: 30%;
+
+	box-shadow: 0px 0px 30px rgba(255, 216, 0,0.2);
+	text-shadow: 0px 0px 14px rgba(206,206,206,0.9);
+}
+
+.content2{
+	width: 100%;
+	height: 70%;
+	padding: 2%;
+	color: white;
+
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+
+
+	overflow-x: hidden;
+	overflow-y:scroll;
+}
+
+.content3{
+	width: 100%;
+	height: 70%;
+	padding: 2%;
+	color: white;
+
+	@include centerize;
+
+
+	.sd{
+
+	width: 90%;
+	height: 90%;
+	padding: 1%;
+	@include centerize;
+	}
+
+	.sd3{
+
+		@include centerize;
+
+		img{
+			transition: 1s;
+
+			width: 100%;
+			border-radius: 100%;
+			border-color: black;
+			border-style: solid;
+			border-width: 2px;
+		}
+
+		img:hover{
+			transition: 1s;
+			border-color: $red;
+
+			transform: rotate(12deg) scale(1.1);
+			-webkit-box-shadow: 0px 0px 21px -7px $red; 
+			box-shadow: 0px 0px 21px -7px $red;
+		}
+	}
+}
+
+
+.mlogo{
+	width: 30%;
+	height: 30%;
+	margin: 2%;
+}
+
+.bb{ 
+	width: 50%;
+	height: 10%;
+	margin: 1%;
+
+	@include centerize;
+}
+
+.bb a{
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+
+	transition: 1s;
+	margin: 1%;
+	padding: 2%;
+
+	color: white;
+
+	border-style: solid;
+	border-width: 1px;
+	border-color: $yellow;
+	width: 25%;
+	text-align: center;
+
+	font-size: 3vh;
+
+}
+
+.bb a:hover{
+
+	transition: 1s;
+	color: white;
+
+	width: 30%;
+
+	box-shadow: 0px 0px 30px rgba(255, 216, 0,0.2);
+	text-shadow: 0px 0px 14px rgba(206,206,206,0.9);
+
+}
+
+.bb2{
+	width: 100%;
+	height: 5%;
+	margin: 1%;
+
+	@include centerize;
+}
+
+.bb2 a{
+	padding: 0.5%;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+
+	transition: 1s;
+	margin: 0.4%;
+
+	color: white;
+
+	border-style: solid;
+	border-width: 1px;
+	border-color: $yellow;
+	width: 15%;
+	text-align: center;
+
+	font-size: 2.2vh;
+
+}
+
+.bb2 a:hover{
+	transition: 1s;
+	color: white;
+
+	width: 17%;
+
+	box-shadow: 0px 0px 30px rgba(255, 216, 0,0.2);
+	text-shadow: 0px 0px 14px rgba(206,206,206,0.9);
+}
+
+
+
+.mlogo img{
+ 	width: 100%;
+}
+
+
+
+hr{
+	margin: 1%;
+	width: 25%;
+	height: 1px;
+	background-color: $yellow;
+}
+
+h1 {
+
+
+	font-size: 4vh;
+	border-bottom-style: solid;
+	border-bottom-color: $yellow;
+	border-bottom-width: 1px;
+
+
+}
+
+h2 {
+
+
+	font-size: 3.2vh;
+	border-bottom-style: solid;
+	border-bottom-color: $red;
+	border-bottom-width: 1px;
+	margin: 0.5%;
+
+
+}
+
+i{
+	color: $red;
+}
+
+.sd{
+	
+	width: 95%;
+	padding: 1%;
+	@include centerize;
+}
+
+.sd p{
+	font-size: 2vh;
+}
+
+.sd1{
+	margin: 1%;
+	width: 36%;
+}
+
+.sd2{
+	margin: 1%;
+	width: 56%
+}
+
+.sd3{
+	margin: 1%;
+	width: 30%;
+
+	.troll{
+		opacity: 1;
+	}
+
+	.title{
+		text-align: center;
+		width: 100%;
+		margin-bottom: 5%;
+		font-size: 1.7vh;
+		font-weight: 600;
+	}
+
+	a{ 
+		transition: 1s;
+		opacity: 0.8;
+
+		color: $yellow;
+
+	}
+
+	a:hover{
+		transition: 1s;
+		opacity: 1;
+
+		text-decoration: underline;
+	}
+
+	.discord{
+		transition: 1s;
+		opacity: 1;
+
+		color: $purple;
+	}
+
+	.discord:hover{
+		transition: 1s;
+		opacity: 0.8;
+
+		text-decoration: underline;
+	}
+}
+
+table{
+	width: 100%;
+}
+
+table .main{ 
+	width: 30%;
+	text-align: left;
+}
+
+table .optional{
+	color: $yellow;
+}
+
+table td, th{
+	padding: 1%;
+}
+
+table tr{
+	width: 100%;
+}
+
+table td{
+	text-align: center;
+}
+
+.separator{
+	border-bottom-color: $yellow;
+	border-bottom-style: solid;
+	border-bottom-width: 1px; 
+}
+
+.material-symbols-sharp {
+	width: 100%;
+	text-align: center;
+
+	a {
+		transition: 1s;
+		padding: 0.2%;
+		border-radius: 2rem;
+	}
+
+	a:hover{
+		transition: 1s;
+
+		box-shadow: 0px 0px 10px rgba(255, 216, 0,0.7);
+		text-shadow: 0px 0px 14px rgba(206,206,206,0.9);
+	}
+}
+
+

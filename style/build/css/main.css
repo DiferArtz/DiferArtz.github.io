@@ -313,11 +313,11 @@ i {
     transition: 1s;
     opacity: 0.9;
     color: #FF008A;
-    font-size: 3vh; }
+    font-size: 120%; }
   .sd3 .tos:hover {
     transition: 1s;
     opacity: 1;
-    font-size: 4vh; }
+    font-size: 150%; }
   .sd3 .discord {
     transition: 1s;
     opacity: 1;
@@ -372,16 +372,18 @@ table td {
   padding: 1%;
   overflow: hidden;
   text-align: center;
-  height: 8vw;
+  height: 100%;
   border-style: solid;
   border-radius: 1rem;
   border-color: #FF008A;
-  border-width: 1px; }
+  border-width: 1px;
+  font-size: 2vh; }
+  .tosbox p {
+    font-size: 2vh; }
 
 .closebutton {
   align-self: flex-end;
   width: 100%;
-  font-size: 3vh;
   text-decoration: none; }
 
 .closetop {
@@ -412,3 +414,6 @@ table td {
   display: flex;
   flex-wrap: wrap;
   flex-flow: flex-start; }
+
+.popupmom {
+  height: 16vh; }

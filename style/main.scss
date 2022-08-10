@@ -401,7 +401,7 @@ i{
 
 		opacity: 0.9;
 		color: $red;
-		font-size: 3vh;
+		font-size: 120%;
 	}
 
  .tos:hover{
@@ -409,7 +409,7 @@ i{
 
 
 		opacity: 1;
-		font-size: 4vh;
+		font-size: 150%;
 
 
 	}
@@ -486,21 +486,28 @@ table td{
 	justify-content: top;
 	flex-direction: column;
 
+
+
 	padding: 1%;
 	overflow: hidden;
 	text-align: center;
-	height: 8vw;
+	height: 100%;
 
 	border-style: solid;
 	border-radius: 1rem;
 	border-color: $red;
 	border-width: 1px;
+
+	font-size: 2vh;
+
+	p{
+		font-size: 2vh;
+	}
 }
 
 .closebutton{
 	align-self: flex-end;
 	width: 100%;
-	font-size: 3vh;
 
 	text-decoration: none;
 }
@@ -540,4 +547,8 @@ table td{
 	flex-wrap: wrap;
 
 	flex-flow: flex-start;
+}
+
+.popupmom{
+	height: 16vh;
 }

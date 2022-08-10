@@ -309,6 +309,15 @@ i {
     transition: 1s;
     opacity: 1;
     text-decoration: underline; }
+  .sd3 .tos {
+    transition: 1s;
+    opacity: 0.9;
+    color: #FF008A;
+    font-size: 3vh; }
+  .sd3 .tos:hover {
+    transition: 1s;
+    opacity: 1;
+    font-size: 4vh; }
   .sd3 .discord {
     transition: 1s;
     opacity: 1;
@@ -342,14 +351,64 @@ table td {
   border-bottom-style: solid;
   border-bottom-width: 1px; }
 
-.material-symbols-sharp {
+.material-symbols-outlined {
   width: 100%;
   text-align: center; }
-  .material-symbols-sharp a {
+  .material-symbols-outlined a {
     transition: 1s;
     padding: 0.2%;
     border-radius: 2rem; }
-  .material-symbols-sharp a:hover {
+  .material-symbols-outlined a:hover {
     transition: 1s;
     box-shadow: 0px 0px 10px rgba(255, 216, 0, 0.7);
     text-shadow: 0px 0px 14px rgba(206, 206, 206, 0.9); }
+
+.tosbox {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: top;
+  flex-direction: column;
+  padding: 1%;
+  overflow: hidden;
+  text-align: center;
+  height: 8vw;
+  border-style: solid;
+  border-radius: 1rem;
+  border-color: #FF008A;
+  border-width: 1px; }
+
+.closebutton {
+  align-self: flex-end;
+  width: 100%;
+  font-size: 3vh;
+  text-decoration: none; }
+
+.closetop {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center; }
+
+.closetop1 {
+  width: 45%;
+  text-align: right; }
+
+.closetop2 {
+  width: 45%;
+  text-align: left;
+  color: #FFD800; }
+
+.sdtos {
+  width: 95%;
+  padding: 1%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: normal; }
+
+.tostext {
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: flex-start; }

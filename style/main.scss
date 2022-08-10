@@ -396,6 +396,24 @@ i{
 		text-decoration: underline;
 	}
 
+	.tos{
+		transition: 1s;
+
+		opacity: 0.9;
+		color: $red;
+		font-size: 3vh;
+	}
+
+ .tos:hover{
+		transition: 1s;
+
+
+		opacity: 1;
+		font-size: 4vh;
+
+
+	}
+
 	.discord{
 		transition: 1s;
 		opacity: 1;
@@ -442,7 +460,7 @@ table td{
 	border-bottom-width: 1px; 
 }
 
-.material-symbols-sharp {
+.material-symbols-outlined {
 	width: 100%;
 	text-align: center;
 
@@ -461,3 +479,65 @@ table td{
 }
 
 
+.tosbox{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: top;
+	flex-direction: column;
+
+	padding: 1%;
+	overflow: hidden;
+	text-align: center;
+	height: 8vw;
+
+	border-style: solid;
+	border-radius: 1rem;
+	border-color: $red;
+	border-width: 1px;
+}
+
+.closebutton{
+	align-self: flex-end;
+	width: 100%;
+	font-size: 3vh;
+
+	text-decoration: none;
+}
+
+.closebutton:hover{
+	
+}
+
+.closetop{
+	width: 100%;
+	@include centerize;
+}
+
+.closetop1{
+	width: 45%;
+	text-align: right;
+}
+
+
+.closetop2{
+	width: 45%;
+	text-align: left;
+	color: $yellow;
+}
+
+.sdtos{
+	  width: 95%;
+    padding: 1%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: normal;
+
+}
+
+.tostext {
+	display: flex;
+	flex-wrap: wrap;
+
+	flex-flow: flex-start;
+}

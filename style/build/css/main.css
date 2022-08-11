@@ -417,3 +417,102 @@ table td {
 
 .popupmom {
   height: 16vh; }
+
+@media (max-width: 600px) {
+  html {
+    padding: 0;
+    margin: 0; }
+  body {
+    height: 100%;
+    width: 100%;
+    margin: 0; }
+  .topbar {
+    display: flex;
+    margin-top: 30%;
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center; }
+    .topbar .mlogo {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      width: 70%;
+      height: 60%;
+      margin: 1%;
+      margin-bottom: 2%; }
+      .topbar .mlogo img {
+        width: 65%; }
+    .topbar .bb {
+      width: 100%; }
+      .topbar .bb a {
+        width: 25%;
+        margin: 0.3%;
+        text-align: center; }
+      .topbar .bb a:hover {
+        width: 27%; }
+  .bb2 {
+    width: 95%;
+    height: 10%;
+    padding: 0%;
+    margin-top: 3%;
+    margin-bottom: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center; }
+  .bb2 a {
+    margin: 0.3%;
+    width: 40%;
+    height: 35%; }
+  .bb2 a:hover {
+    width: 45%; }
+  .popupmom {
+    height: 16vh; }
+  .sd3 {
+    width: 70%; }
+  .content2, .content3, .content {
+    flex-flow: column;
+    align-items: center; }
+  .content3 {
+    width: 100%;
+    height: 90%; }
+    .content3 .a {
+      padding: 10%;
+      height: 90%;
+      display: flex;
+      flex-flow: column;
+      justify-content: flex-start; }
+  .mlogo {
+    width: 70%; }
+  .bb {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-flow: column; }
+    .bb a {
+      width: 80%; }
+    .bb a:hover {
+      width: 90%; }
+  .sd {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column;
+    justify-content: center; }
+    .sd .sd1 {
+      width: 100%; }
+    .sd .sd2 {
+      width: 100%; }
+    .sd .sd3 {
+      width: 100%; }
+    .sd table {
+      font-size: 3vw; } }

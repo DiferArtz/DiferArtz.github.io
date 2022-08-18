@@ -56,6 +56,7 @@ $main2: #0B060B;
 $yellow: #FFD800;
 $red: #FF008A;
 $purple: #B46AFF;
+$hatebird: #1DA1F2;
 
 
 
@@ -84,6 +85,8 @@ body {
 	flex-wrap: wrap;
 	justify-content: center;
 	align-content: center;
+
+	overflow: hidden;
 }
 
 .content{
@@ -178,6 +181,7 @@ body {
 	height: 70%;
 	padding: 2%;
 	color: white;
+	overflow-y: scroll;
 
 	@include centerize;
 
@@ -194,24 +198,6 @@ body {
 
 		@include centerize;
 
-		img{
-			transition: 1s;
-
-			width: 100%;
-			border-radius: 100%;
-			border-color: black;
-			border-style: solid;
-			border-width: 2px;
-		}
-
-		img:hover{
-			transition: 1s;
-			border-color: $red;
-
-			transform: rotate(12deg) scale(1.1);
-			-webkit-box-shadow: 0px 0px 21px -7px $red; 
-			box-shadow: 0px 0px 21px -7px $red;
-		}
 	}
 }
 
@@ -375,6 +361,27 @@ i{
 
 	.troll{
 		opacity: 1;
+
+		@include centerize;
+
+		img{
+			transition: 0.6s;
+
+			width: 90%;
+			border-radius: 100%;
+			border-color: black;
+			border-style: solid;
+			border-width: 2px;
+		}
+
+		img:hover{
+			transition: 1s;
+			border-color: $red;
+
+			transform: rotate(12deg) scale(1.1);
+			-webkit-box-shadow: 0px 0px 21px -7px $red; 
+			box-shadow: 0px 0px 21px -7px $red;
+		}
 	}
 
 	.title{
@@ -411,25 +418,68 @@ i{
  .tos:hover{
 		transition: 1s;
 
-
 		opacity: 1;
 		font-size: 150%;
 
 
 	}
 
-	.discord{
-		transition: 1s;
+
+	.link{
+
 		opacity: 1;
 
-		color: $purple;
+		text-decoration: none;
+
+		user-select: none;
+		-moz-user-select: none;
+		-webkit-user-drag: none;
+		-webkit-user-select: none;
+		-ms-user-select: none;
+
+		transition: 1s;
+		margin: 1%;
+		padding: 4%;
+
+		color: white;
+
+		border-style: solid;
+		border-width: 1px;
+		border-color: $yellow;
+		width: 70%;
+		text-align: center;
+
+		font-size: 2vh;
+	}
+
+	.link:hover{
+		text-decoration: none;
+
+		transition: 1s;
+		color: white;
+
+		width: 80%;
+
+		box-shadow: 0px 0px 30px rgba(255, 216, 0,0.2);
+		text-shadow: 0px 0px 14px rgba(206,206,206,0.9);
+	}
+
+	.hatebird{
+		border-color: $hatebird;
+	}
+
+	.hatebird:hover{
+		box-shadow: 0px 0px 30px rgba(29, 161, 242,0.2);
+		text-shadow: 0px 0px 14px rgba(206,206,206,0.9);
+	}
+
+	.discord{
+		border-color: $purple;
 	}
 
 	.discord:hover{
-		transition: 1s;
-		opacity: 0.8;
-
-		text-decoration: underline;
+		box-shadow: 0px 0px 30px rgba(180, 106, 255,0.2);
+		text-shadow: 0px 0px 14px rgba(206,206,206,0.9);
 	}
 }
 
@@ -558,6 +608,84 @@ table td{
 }
 
 //cellphone
+
+.smol{
+
+	position: absolute;
+
+	transition: 1s;
+
+	top: 79%;
+	left: 0%;
+
+	width: 10rem;
+	height: 10rem;
+
+	display: inline-block;
+
+	background: url("../../../imgs/c2.png") no-repeat;
+	background-size: 100% 100%;
+
+	.textpop{
+
+		transform: rotate(-2deg) translate(4rem, 0);
+		transition: 0.5s;
+		opacity: -1;
+
+		position: absolute;
+		width: 10rem;
+		height: 2rem;
+
+		background-color: $main1;
+		border-color: $red;
+		border-width: 2px;
+		border-style: solid;
+		border-radius: 2rem;
+		display: inline-block;
+
+		top: -20%;
+
+		text-align: center;
+
+		@include centerize;
+
+		p{
+			font-size: 70%;
+			font-weight: bold;
+
+			color: white;
+		}
+
+	}
+
+}
+
+.smol:hover{
+
+	top: 75%;
+	//My Luci
+
+	transition: 1s;
+
+	cursor: pointer;
+
+	transform: scale(1.2) rotate(2deg);
+
+	background: url("../../../imgs/c1.png") no-repeat;
+	background-size: 100% 100%;
+
+	.textpop{
+		transform: rotate(2deg) translate(4rem, 0);
+		transition: 1s;
+
+		opacity: 1;
+
+		box-shadow: 0px 0px 30px rgba(255, 0, 138,0.2);
+		text-shadow: 0px 0px 14px rgba(206,206,206,0.9);
+	}
+
+}
+
 @media (max-width: 600px){
 
 	html{
@@ -569,6 +697,10 @@ table td{
 		height: 100%;
 		width: 100%;
 		margin: 0;
+	}
+
+	.troll{
+		width: 40%;
 	}
 
 	.topbar{
@@ -656,10 +788,10 @@ table td{
 
 		.content3{
 			width: 100%;
-			height: 90%;
+			height: 80%;
 
 			.a{
-				padding: 10%;
+				padding: 0%;
 
     	height: 90%;
     	display: flex;
@@ -711,4 +843,7 @@ table td{
 			}
 		}
 
+		.smol{
+			display: none;
+		}
 }

@@ -1,0 +1,1190 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="Assets/style.css">
+	<title>The Facility</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+</head>
+<body class="background">
+
+
+<div class="decour2">
+	<svg class="svg2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgb(18, 235, 255)" fill-opacity="1" d="M0,288L18.5,277.3C36.9,267,74,245,111,208C147.7,171,185,117,222,112C258.5,107,295,149,332,149.3C369.2,149,406,107,443,96C480,85,517,107,554,128C590.8,149,628,171,665,170.7C701.5,171,738,149,775,128C812.3,107,849,85,886,64C923.1,43,960,21,997,42.7C1033.8,64,1071,128,1108,181.3C1144.6,235,1182,277,1218,266.7C1255.4,256,1292,192,1329,165.3C1366.2,139,1403,149,1422,154.7L1440,160L1440,0L1421.5,0C1403.1,0,1366,0,1329,0C1292.3,0,1255,0,1218,0C1181.5,0,1145,0,1108,0C1070.8,0,1034,0,997,0C960,0,923,0,886,0C849.2,0,812,0,775,0C738.5,0,702,0,665,0C627.7,0,591,0,554,0C516.9,0,480,0,443,0C406.2,0,369,0,332,0C295.4,0,258,0,222,0C184.6,0,148,0,111,0C73.8,0,37,0,18,0L0,0Z"></path></svg>
+</div>
+
+<div class="decour">
+
+<svg class="svg1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill=" rgb(252, 17, 150)" fill-opacity="1" d="M0,64L34.3,101.3C68.6,139,137,213,206,229.3C274.3,245,343,203,411,176C480,149,549,139,617,160C685.7,181,754,235,823,245.3C891.4,256,960,224,1029,186.7C1097.1,149,1166,107,1234,106.7C1302.9,107,1371,149,1406,170.7L1440,192L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
+
+</div>
+
+
+
+
+<!--HUB-->
+<div id="main" class="content background">
+
+	<div class="holder">
+
+		<section class="title">
+			<h2 class="white">// WELCOME TO THE FACILITY</h2>
+		</section>
+
+		<section class="logo-section">
+			<img class="logo" alt="Difer's Logo" src="Assets/imgs/DiferLogo.png">
+		</section>
+
+		<section>
+			<a href="https://forms.gle/YeXdFctP2rfinPRD8" target="_blank" class="btn big-btn red border shadow rounded">ORDER A COMMISSION</a>
+		</section>
+
+	</div>
+
+	<div class="button-holder">
+		<a  onclick="productsToggle()" class="btn background shadow border purple b-purple full-rounded" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
+    	<path d="M11.5 4v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5ZM8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1Zm0 6.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
+
+		</svg>
+
+		<div class="popup-box purple background border rounded b-purple">PRODUCTS</div>
+		</a>
+		  <a href="https://www.artstation.com/difer_artz" target="_blank" class="btn background shadow red border b-red full-rounded" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
+		  <path fill-rule="evenodd" d="M2 15.5V2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.74.439L8 13.069l-5.26 2.87A.5.5 0 0 1 2 15.5zM8.16 4.1a.178.178 0 0 0-.32 0l-.634 1.285a.178.178 0 0 1-.134.098l-1.42.206a.178.178 0 0 0-.098.303L6.58 6.993c.042.041.061.1.051.158L6.39 8.565a.178.178 0 0 0 .258.187l1.27-.668a.178.178 0 0 1 .165 0l1.27.668a.178.178 0 0 0 .257-.187L9.368 7.15a.178.178 0 0 1 .05-.158l1.028-1.001a.178.178 0 0 0-.098-.303l-1.42-.206a.178.178 0 0 1-.134-.098L8.16 4.1z"/>
+		</svg>
+
+		<div class="popup-box red background border rounded b-red">PORTFOLIO</div>
+		</a>
+				<a onclick="contactToggle()"class="btn background shadow border blue b-blue full-rounded" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
+		    <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+
+		</svg>
+
+		<div class="popup-box background border rounded blue b-blue">CONTACT</div>
+		</a>
+	</div>
+</div>
+
+<!--PRODUCTS-->
+<div id="products" class="content background hidden">
+
+
+	<div class="holder-beta">
+
+
+
+		<img class="banner-img rounded" src="Assets/imgs/b1.png">
+
+
+		<section>
+		<a style="" href="Assets/tos.pdf" target="_blank" class="btn big-btn yellow border shadow rounded">// TERMS OF SERVICE //</a>
+		</section>
+
+		<section class="subtitle bottom-border b-blue">
+			<h2 class="white">// DIGITAL ART</h2>
+		</section>
+
+		<section class="text-capsule">
+			
+			<p class="white">
+			Hello! This section is dedicated to the products related to Digital art! These include:
+			</p>
+
+			<p class="white" style="align-self: flex-start;"><bold>✦ ILLUSTRATIONS<br>✦ CHARACTER SHEETS<br>✦ ALBUM COVERS<br>✦ ANIMATICS</bold></p>
+
+		</section>
+
+		<img class="banner-img rounded" src="Assets/imgs/b3.png">
+		<section id="illu" class="subtitle bottom-border b-red">
+			<h2 class="white">// ILLUSTRATIONS</h2>	
+		</section>
+
+
+		<section class="text-capsule">
+			
+			<p class="white">
+			<b class="yellow">Illustrations</b> are personal, <b class="blue">highly customizable pieces of artwork</b> that can have multiple characters and highly detailed Backgrounds depending on your preferences. Bring your OCs to life!
+			</p>
+
+			<p class="white">
+			They are perfect for simple gifts, marketing, posters, concept art and many other categories! It all depends on you and your preferences.
+			</p>
+
+			<p class="white yellow">
+			<b>✦ Bring your dreams to life!</b>
+			</p>
+
+			<h3 class="white bottom-border b-red">LINEART</h3>
+			<table class="white">
+				<tbody><tr>
+					<th>TYPE</th>
+					<th>PRICE</th>
+					<th>TIME</th>
+					<th class="optional">NSFW</th>
+				</tr>
+
+				<tr class="divider">
+				</tr>
+
+				<tr>
+					<td>1 Character</td>
+					<td>$ 25</td>
+					<td>1 Week</td>
+					<td>+$ 15</td>
+				</tr>
+
+				<tr>
+					<td>2 Characters</td>
+					<td>$ 50</td>
+					<td>1 — 2 Weeks</td>
+					<td>+$ 25</td>
+				</tr>
+
+				<tr>
+					<td>3 Characters</td>
+					<td>$ 75</td>
+					<td>3 Weeks</td>
+					<td>+$ 15 <i>Each</i></td>
+				</tr>
+
+				<tr>
+					<td>4+ Characters</td>
+					<td>$ 25 <i>Each Character</i> </td>
+					<td>4 Weeks</td>
+					<td>+$ 20 <i>Each</i></td>
+				</tr>
+
+			</tbody>
+			</table>
+
+
+			<h3 class="white bottom-border b-blue">FULL COLOR</h3>
+			<table class="white">
+				<tbody><tr>
+					<th>TYPE</th>
+					<th>PRICE</th>
+					<th>TIME</th>
+					<th class="optional">BACKGROUND</th>
+					<th class="optional">NSFW</th>
+				</tr>
+
+				<tr class="divider">
+				</tr>
+
+				<tr>
+					<td>1 Character</td>
+					<td>$ 75</td>
+					<td>2 — 3 Weeks</td>
+					<td>+$ 20</td>
+					<td>+$ 25</td>
+				</tr>
+
+				<tr>
+					<td>2 Characters</td>
+					<td>$ 100</td>
+					<td>3 — 4 Weeks</td>
+					<td>+$ 25</td>
+					<td>+$ 35</td>
+				</tr>
+
+				<tr>
+					<td>3 Characters</td>
+					<td>$ 135</td>
+					<td>5 — 6 Weeks</td>
+					<td>+$ 30</td>
+					<td>+$ 25 <i>Each</i></td>
+				</tr>
+
+				<tr>
+					<td>4+ Characters</td>
+					<td>$ 50 <i>Each Character</i> </td>
+					<td>2 — 3 Months</td>
+					<td>+$ 35</td>
+					<td>+$ 30 <i>Each</i></td>
+				</tr>
+
+			</tbody>
+			</table>
+
+		</section>
+
+
+		<!--Test one-->
+		<section id="chara" class="subtitle bottom-border b-red">
+			<h2 class="white">// CHARACTER SHEET</h2>	
+		</section>
+
+		<section class="text-capsule">
+			
+			<p class="white"><b class="yellow">Most OCs will use a reference / character sheet</b>, to ensure that their design is preserved during the creation of new artworks!</p>
+			<p class="white"><b class="red">Don't keep your precious ones without one of them, make sure you can <i>provide the right reference for your artist of choice!</i></b> Luckily, here in the facility its common knowledge that this fact can be fixed with this simple package.</p>
+						<p class="yellow"><b>✦ Up to <i>5 Different Poses!</i><br>
+						✦ Multiple Outfits Included<br>
+						✦ <i>Multiple Forms</i> and more!</b></p>
+
+
+				<table class="white">
+
+								<tr>
+									<th>TYPE</th>
+									<th>PRICE</th>
+									<th>TIME</th>
+									<th class="optional">NSFW</th>
+								</tr>
+
+								<tr class="divider">
+								</tr>
+
+								<tr>
+									<td>1 Pose</td>
+									<td>$ 65</td>
+									<td>2 — 3 Weeks</td>
+									<td>+$ 15</td>
+								</tr>
+
+								<tr>
+									<td>2 Poses</td>
+									<td>$ 55 <i>Each Pose</i></td>
+									<td>3 — 4 Weeks</td>
+									<td>+$ 20 <i>Each</i></td>
+								</tr>
+
+								<tr>
+									<td>3 Poses</td>
+									<td>$ 45 <i>Each Pose</i></td>
+									<td>4 — 5 Weeks</td>
+									<td>+$ 15 <i>Each</i></td>
+								</tr>
+
+								<tr>
+									<td>4+ Poses</td>
+									<td>$ 50 <i>Each Pose</i></td>
+									<td>2 — 3 Months</td>
+									<td>+25 <i>Each</i></td>
+								</tr>
+
+							</table>
+
+		</section>
+
+
+		<section id="albu" class="subtitle bottom-border b-red">
+			<h2 class="white">// ALBUM COVERS</h2>	
+		</section>
+
+		<section class="text-capsule">
+			
+			<p class="white"><b class="yellow">To entice your listener, or to solidify your style, an album cover always comes a long way into promoting your brand and art.</b></p>
+				
+			<p class="white"><b class="red">To simplistic to the most psychedelic artstyle</b>, the range that the facility provides always depends on the infinite prosperity of your imagination.</p>
+
+			<p class="white">Together we will build the <b class="blue">perfect album cover for your music.</b></p>
+			
+			<table class="white">
+
+				<tr>
+					<th>TYPE</th>
+					<th>PRICE</th>
+					<th>TIME</th>
+					<th class="optional">VARIATIONS</th>
+				</tr>
+
+				<tr class="divider">
+				</tr>
+
+				<tr>
+					<td>Abstract Album Cover</td>
+					<td>$ 50</td>
+					<td>1 — 2 Weeks</td>
+					<td>+$ 15 <i>Each</i></td>
+				</tr>
+
+				<tr>
+					<td>Modern Album Cover</td>
+					<td>$ 60</td>
+					<td>2 — 3 Weeks</td>
+					<td>+$ 17 <i>Each</i></td>
+				</tr>
+
+				<tr>
+					<td>Painting Album Cover</td>
+					<td>$ 75</td>
+					<td>2 — 3 Weeks</td>
+					<td>+$ 20 <i>Each</i></td>
+				</tr>
+
+
+			</table>
+
+		</section>
+
+		<section id="anima" class="subtitle bottom-border b-red">
+			<h2 class="white">// ANIMATICS</h2>	
+		</section>
+
+		<section class="text-capsule">
+			
+			<p class="white"><b class="yellow">Animatics are simple stills that can simulate a small animation, being a more accessible option for those that want an animation.</b></p>
+				
+			<p class="white">Every animatic can vary between prices, quality and time spent on it. <b class="red">Depending on the package!</b></p>
+				
+			<p class="yellow"><b>✦ Minimum <i>is 30 Seconds</i><br>
+			✦ Lighting Included!</b></p>
+
+			<table class="white">
+
+				<tr>
+					<th>QUALITY</th>
+					<th>PRICE PER MIN</th>
+					<th>TIME</th>
+					<th class="optional">EDITING</th>
+				</tr>
+
+				<tr class="divider">
+				</tr>
+
+				<tr>
+					<td>LOW</td>
+					<td>$ 55</td>
+					<td>2 — 3 Weeks</td>
+					<td>+$ 25</td>
+				</tr>
+
+				<tr>
+					<td>MEDIUM</td>
+					<td>$ 75</td>
+					<td>3 — 4 Weeks</td>
+					<td>+$ 35</td>
+				</tr>
+
+				<tr>
+					<td>HIGH</td>
+					<td>$ 100</td>
+					<td>4 — 5 Weeks</td>
+					<td>+$ 50</td>
+				</tr>
+
+			</table>
+
+		</section>
+
+
+		<!--Vtuber Models and Blah Blah Blahja Blast-->
+		<img class="banner-img rounded" src="Assets/imgs/b7.png">
+
+		<section class="subtitle bottom-border b-blue">
+			<h2 class="white">// VTUBER PRODUCTS</h2>
+		</section>
+
+		<section class="text-capsule">
+			<p class="white">
+
+			<b class="red">Vtubers are a new form of streamers / content cretors</b>, based around 2D or 3D Models.
+
+			Here I can offer multiple services related to this subject. Such as:
+			</p>
+			<p class="white" style="align-self: flex-start;"><b>
+			✦ The Model Creation<br>
+
+			✦ The Animation / Rigging<br>
+
+			✦ Vtuber Asset Creation<br>
+
+			✦ And More...
+			</b></p>
+			<p class="blue bottom-border b-blue">
+			All of such are included in my Special Package, known as the FULL VTUBE
+			</p>
+		</section>
+
+		<img class="banner-img rounded" src="Assets/imgs/b6.png">
+
+		<section id="fullvtube" class="subtitle bottom-border b-red">
+			<h2 class="white">// FULL VTUBE</h2>	
+		</section>
+
+		<section class="text-capsule">
+			
+			<p class="white"><b>The FULL VTUBE package will grant you both a Vtuber Model and it's complete LIVE 2D RIG / Animation, Both made with love and care.</b></p>
+				
+			<p class="white">It's perfect to <b class="yellow">create a consistent brand for your content</b>! Since both of the services will be made by the same artist. In this package you will find:</p>
+				
+			<p class="yellow"><b>
+			✦ Up to 2 outfits!<br>
+
+			✦ 7+ Expressions! and 2 Poses!<br>
+
+			✦ Each Extra Expression is $25 USD<br>
+
+			✦ Each Extra Animation or outfit is $100 USD<br>
+
+			✦ 6+ Months of Customer Support<br>
+			</b></p>
+
+			<p class="white">What is <b class="yellow">A.R.M.S?</b> A.R.M.S or Advanced Rigging Mechanisms System is a technique that allows the vtuber to pose their model and create their own expressions inside VtubeStudio! Giving full control of the arms, legs and hands of the character! <b class="red">This is not Hand Tracking.</b></p>
+
+			<table class="white">
+					
+				<tr>
+					<th>TYPE</th>
+					<th>PRICE</th>
+					<th>TIME</th>
+					<th class="optional">RUSH</th>
+					<th class="optional">PRIVATE</th>
+					<th class="optional">A.R.M.S<th>
+				</tr>
+
+				<tr class="divider"></tr>
+
+				<tr>
+					<td>Bust</td>
+					<td>$ 500</td>
+					<td>2 — 4 Months</td>
+					<td>+$ 50</td>
+					<td>+$ 30</td>
+					<td>+$ 200</td>
+				</tr>
+
+				<tr>
+					<td>Chibi</td>
+					<td>$ 600</td>
+					<td>3 — 4 Months</td>
+					<td>+$ 75</td>
+					<td>+$ 35</td>
+					<td>X</td>
+				</tr>
+
+				<tr>
+					<td>Full Body</td>
+					<td>$ 850</td>
+					<td>3 — 6 Months</td>
+					<td>+$ 100</td>
+					<td>+$ 40</td>
+					<td>+$ 450</td>
+				</tr>
+
+			</table>
+
+		</section>
+
+
+		<section id="model" class="subtitle bottom-border b-red">
+			<h2 class="white">// MODEL</h2>	
+		</section>
+
+		<section class="text-capsule">
+			
+			<p class="white"><b>You can also order the services offered in the FULL VTUBE separately.</b></p>
+				
+			<p class="white">Vtuber Models are the perfect product if you wish to become a VTuber! A Model is the representation of you, and therefore all the models made here, are personally hand crafted in the depths of my installations. They can be a Full, Half Body or Chibi Model.</p>
+				
+			<p class="yellow"><b>
+			
+
+			✦ Up to 1 outfits!<br>
+
+			✦ 5+ Expressions!<br>
+
+			✦ Each Extra Expression is $50 USD<br>
+
+			✦ Each Extra Outfit is $100 USD<br>
+
+			</b></p>
+
+			<table class="white">
+					
+							<tr>
+								<th>TYPE</th>
+								<th>PRICE</th>
+								<th>TIME</th>
+								<th class="optional">RUSH</th>
+								<th class="optional">PRIVATE</th>
+							</tr>
+
+							<tr class="divider"></tr>
+
+							<tr>
+								<td>Bust</td>
+								<td>$ 350</td>
+								<td>2 — 3 Months</td>
+								<td>+$ 100</td>
+								<td>+$ 30</td>
+							</tr>
+
+							<tr>
+								<td>Chibi</td>
+								<td>$ 400</td>
+								<td>2 — 3 Months</td>
+								<td>+$ 150</td>
+								<td>+$ 35</td>
+							</tr>
+
+							<tr>
+								<td>Full Body</td>
+								<td>$ 550</td>
+								<td>3 — 5 Months</td>
+								<td>+$ 200</td>
+								<td>+$ 60</td>
+							</tr>
+
+						</table>
+
+		</section>
+
+		<section id="rig" class="subtitle bottom-border b-red">
+			<h2 class="white">// RIGGING</h2>	
+		</section>
+
+		<section class="text-capsule">
+			
+			<p class="white"><b>The LIVE 2D RIG / Animation</b> is the usual process to animate and bring your model to life. In my installations, your models will be brought to reality, <b class="yellow">EXTRA BOUNCY!</b></p>
+				
+			<p class="yellow"><b>
+			
+				✦ Up to 1 Pose!<br>
+
+				✦ 1 Idle Animation!<br>
+
+				✦ Each Extra Pose is $50 USD<br>
+
+				✦ Each Extra Animation $100 USD (Like a Walking Cycle)<br>
+
+			</b></p>
+
+			<table class="white">
+					
+					<tr>
+						<th>TYPE</th>
+						<th>PRICE</th>
+						<th>TIME</th>
+						<th class="optional">RUSH</th>
+						<th class="optional">PRIVATE</th>
+					</tr>
+
+					<tr class="divider"></tr>
+
+					<tr>
+						<td>Bust</td>
+						<td>$ 250</td>
+						<td>1 — 2 Months</td>
+						<td>+$ 100</td>
+						<td>+$ 30</td>
+					</tr>
+
+					<tr>
+						<td>Chibi</td>
+						<td>$ 350</td>
+						<td>2 — 3 Months</td>
+						<td>+$ 125</td>
+						<td>+$ 40</td>
+					</tr>
+
+					<tr>
+						<td>Full Body</td>
+						<td>$ 450</td>
+						<td>2 — 4 Months</td>
+						<td>+$ 150</td>
+						<td>+$ 60</td>
+					</tr>
+
+				</table>
+
+		</section>
+
+		<section id="adop" class="subtitle bottom-border b-red">
+			<h2 class="white">// ADOPTABLES</h2>	
+		</section>
+
+		<section class="text-capsule">
+			
+			<p class="white"><i>Some Models are laying around in my Installations</i>. They are as cute and adorable as all of my other creations, Sadly... they have no home.
+
+			But you can change that! Adopt them! and bring them to a loving owner~</p>
+				
+			<p class="yellow"><b>
+			
+				✦ LIVE 2D RIG not included
+
+			</b></p>
+
+			<table class="white">
+					
+				<tr>
+					<th class="main">NAME</th>
+					<th>TYPE</th>
+					<th>DATE</th>
+				</tr>
+
+				<tr class="divider"></tr>
+
+				<tr>
+					<td class="main"><a class="clickable" href="https://www.artstation.com/artwork/3qBdPD" target="_blank">Vampire Samurai (Nameless)</a></td>
+					<td>Full Body</td>
+					<td>April 2022</td>
+				</tr>
+			</table>
+
+		</section>
+
+
+		<img class="banner-img rounded" src="Assets/imgs/b5.png">
+
+		<section class="subtitle bottom-border b-blue">
+			<h2 class="white">// ASSETS</h2>
+		</section>
+
+		<section class="text-capsule">
+			<p class="white">
+
+			<b class="red">To create a brand, to propel your mark or to simply entice and customize your content, here is the perfect section for that!</b>
+			</p>
+			<p class="white" style="align-self: flex-start;"><b>
+			
+
+				✦ Emojis<br>
+
+				✦ Backgrounds<br>
+
+				✦ Overlays<br>
+
+				✦ Transitions
+
+			</b></p>
+		</section>
+
+		<section id="emo" class="subtitle bottom-border b-red">
+			<h2 class="white">// EMOJIS</h2>	
+		</section>
+
+		<section class="text-capsule">
+			
+			<p class="white"><b class="blue">Emojis and Stickers</b> are a crucial part of a community, either to create a different and unique feel to the space you are trying to cultivate or to fool around in a livestream</p>
+
+			<p class="white">In my care, the same are made with special and professional hands, to make sure your essence and wishes are made into a <b class="yellow bottom-border b-yellow">cute and adorable reality!</b></p>
+				
+			<p class="yellow"><b>
+			
+				
+
+				✦ Custom Emojis!<br>
+
+				✦ No Templates Needed<br>
+
+				✦ Emojis come in packs~!
+
+
+			</b></p>
+
+			<table class="white">
+					
+				<tr>
+					<th>ITEM</th>
+					<th>PRICE</th>
+					<th>TIME</th>
+					<th class="optional">RUSH</th>
+					<th class="optional">PRIVATE</th>
+				</tr>
+
+				<tr class="divider"></tr>
+
+				<tr>
+					<td>Emote Pack <i>5x</i></td>
+					<td>$ 80 <b class="red bottom-border b-red"> $ 16 per Emote</b></td>
+					<td>1 Month</td>
+					<td>+$ 75</td>
+					<td>+$ 25</td>
+				</tr>
+
+				<tr>
+					<td>Emote Pack <i>30x</i></td>
+					<td>$ 300 <b class="red bottom-border b-red"> $ 10 per Emote</b></td>
+					<td>2 Month</td>
+					<td>+$ 100</td>
+					<td>+$ 45</td>
+				</tr>
+
+				<tr>
+					<td>Stickers <i>5x</i></td>
+					<td>$ 100 <b class="red bottom-border b-red"> $ 20 per Emote</b></td>
+					<td>1 Month</td>
+					<td>+$ 80</td>
+					<td>+$ 30</td>
+				</tr>
+
+				<tr>
+					<td>Stickers <i>15x</i></td>
+					<td>$ 225 <b class="red bottom-border b-red"> $ 15 per Emote</b></td>
+					<td>2 Month</td>
+					<td>+$ 80</td>
+					<td>+$ 35</td>
+				</tr>
+
+			</table>
+
+		</section>
+
+		<section id="back" class="subtitle bottom-border b-red">
+			<h2 class="white">// BACKGROUNDS</h2>	
+		</section>
+
+		<section class="text-capsule">
+			
+			<p class="white">To make your content branding and creation <b class="yellow">something more dynamic and personal</b>, why not go with a background? A background can be used to tell stories, to present products to make break screens for your wonderful streams and <b class="red">much much more!</b></p>
+
+			<p class="white">The sky is the limit here, I offer both <b class="blue">2D and 3D backgrounds</b> to suit whatever style you aim for!</p>
+				
+			<p class="white"><b>
+			
+			✦ 2D and 3D Backgrounds<br>
+
+			✦ Dynamic Backgrounds!
+
+			</b></p>
+
+			<table class="white">
+					
+				<tr>
+					<th >TYPE</th>
+					<th>PRICE</th>
+					<th>TIME</th>
+					<th class="optional">VARIANT</th>
+					<th class="optional">RUSH</th>
+					<th class="optional">PRIVATE</th>
+				</tr>
+
+				<tr class="divider"></tr>
+
+				<tr>
+					<td >2D</td>
+					<td>$ 90</td>
+					<td>1 Month</td>
+					<td>+$ 25</td>
+					<td>+$ 50</td>
+					<td>+$ 15</td>
+				</tr>
+
+				<tr>
+					<td >3D</td>
+					<td>$ 75 <i>Per Shot</i></td>
+					<td>2 Months</td>
+					<td>+$ 35</td>
+					<td>+$ 75</td>
+					<td>+$ 25</td>
+				</tr>
+
+
+			</table>
+
+		</section>
+
+		<section id="over" class="subtitle bottom-border b-red">
+			<h2 class="white">// OVERLAYS</h2>	
+		</section>
+
+		<section class="text-capsule">
+			
+			<p class="white"><b class="yellow bottom-border b-yellow">To a Chat box to a simple notification banner</b>, the right flare for your stream can be made here!</p>
+
+			<p class="white">Overlays are commonly used by content creators to display multiple functions! They can be used in Streams, Youtube videos or simply as a show off to a friend.</p>
+				
+			<p class="white"><b>
+			
+			✦ Custom Chats for Streams!<br>
+
+			✦ Perfect for Youtube and Twitch!<br>
+
+			✦ Work with OBS!
+
+
+			</b></p>
+
+			<table class="white">
+
+				<tr>
+					<th>ITEM</th>
+					<th>PRICE</th>
+					<th>TIME</th>
+					<th class="optional">RUSH</th>
+					<th class="optional">PRIVATE</th>
+				</tr>
+
+				<tr class="divider"></tr>
+
+				<tr>
+					<td>Custom Chat</td>
+					<td>$ 35</td>
+					<td>1 — 2 Weeks</td>
+					<td>+$ 20</td>
+					<td>+$ 15</td>
+				</tr>
+
+
+				<tr>
+					<td>Screens</td>
+					<td>$ 30</td>
+					<td>1 — 2 Weeks</td>
+					<td>+$ 15</td>
+					<td>+$ 10</td>
+				</tr>
+
+				<tr>
+					<td>Notifications</td>
+					<td>$ 25</td>
+					<td>1 — 2 Weeks</td>
+					<td>+$ 10</td>
+					<td>+$ 15</td>
+				</tr>
+
+
+			</table>
+
+		</section>
+
+		<!--Tranz -->
+
+		<section id="tranz" class="subtitle bottom-border b-red">
+			<h2 class="white">// TRANSITIONS</h2>	
+		</section>
+
+		<section class="text-capsule">
+			
+			<p class="white"><b class="red">To grant a smooth feeling to Streams and Editing a transition is always helpful</b>. Let go of the classic fade-in / fade-out and say hello to your own Transition!</p>
+
+			<p class="white">Transitions are catered to your brand, <b class="yellow">with</b> <b class="red">your</b> <b class="blue">colors</b>, logo and overall style! So don't worry in integrating them seamlessly!</p>
+				
+			<p class="white"><b>
+			
+			✦ Your style and Branding preserved!<br>
+
+			✦ Practical and multifunctional!<br>
+
+			✦ Smooth as Butter~
+
+			</b></p>
+
+			<table class="white">
+					
+				<tr>
+					<th>ITEM</th>
+					<th>PRICE</th>
+					<th>TIME</th>
+					<th class="optional">RUSH</th>
+					<th class="optional">PRIVATE</th>
+				</tr>
+
+				<tr class="divider"></tr>
+
+				<tr>
+					<td>Premium</td>
+					<td>$ 55</td>
+					<td>2 — 3 Weeks</td>
+					<td>+$ 30</td>
+					<td>+$ 20</td>
+				</tr>
+
+
+				<tr>
+					<td>Standard</td>
+					<td>$ 45</td>
+					<td>1 — 2 Weeks</td>
+					<td>+$ 20</td>
+					<td>+$ 15</td>
+				</tr>
+
+				<tr>
+					<td>Budget</td>
+					<td>$ 35</td>
+					<td>1 Week</td>
+					<td>+$ 15</td>
+					<td>+$ 10</td>
+				</tr>
+
+
+			</table>
+
+		</section>
+
+
+		<section id="miss" class="subtitle bottom-border b-blue">
+			<h2 class="white">// MISC</h2>
+		</section>
+
+
+		<section class="text-capsule">
+			
+		<img class="banner-img rounded" src="Assets/imgs/b2.png">
+
+			<p class="white">In this section, I will explain and showcase some of my interests that aren't really compatible or good enough to be an active product offered in the Facility</p>
+
+			<p class="white">To go forward is to explore more of a diary than a simple list of products, feel free to scroll and discover the secrets of this Machine!</p>
+
+			<h2 class="white subtitle bottom-border b-red">
+				VOICE ACTING
+			</h2>
+
+			<p class="white">One of my small dreams, is to reach a point where I am comfortable with voice acting</p>
+			<p class="white">To lend my voice to a project, specially one that I relate to, is an idea that really really excites me!</p>
+			<p class="white">Although I do have my doubts, I am currently working on my voice modulation to make sure I can provide and soon live this dream!</p>
+
+			<h2 class="white subtitle bottom-border b-red">
+				WRITING
+			</h2>
+
+			<p class="white">On my free time, I enjoy writing!</p>
+			<p class="white">That might come as no surprise, since I love sharing some of my rambles during streams. I really enjoy creating worlds, OCS, different challenges and monsters!</p>
+			<p class="white">Currently I am making an RPG system during my free time, and it warms my heart that most people that I showed it to seem to really like it!</p>
+
+			<h2 class="white subtitle bottom-border b-red">
+				CODING
+			</h2>
+
+			<p class="white">In case that its not known, I am a Computer Scientist!</p>
+			<p class="white">Coding is definetly one of my greatest passions on this little planet, just the joy to create and code an idea into existance makes me super excited!</p>
+			<p class="white">Some day, I might even start teaching it!</p>
+
+			<p></p>
+			<p></p>
+			<p></p>
+			<p></p>
+		</section>
+
+	</div>
+	<div id="navbar" class="navbar border b-red">
+				
+
+				<div>
+					<section class="navbar-list">
+						<div class="folder">
+							<span class="title-folder border b-purple">
+
+							<svg class="margin-r" xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
+					    	<path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+							<path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
+							</svg>
+
+							DIGITAL ART</span>
+							<div class="folder-items">
+							<span><a href="#illu">ILLUSTRATIONS</a></span>
+							<span><a href="#chara">CHARACTER SHEETS</a></span>
+							<span><a href="#albu">ALBUM COVERS</a></span>
+							<span><a href="#anima">ANIMATICS</a></span>
+							</div>
+						</div>
+
+						<div class="folder">
+							<span class="title-folder border b-purple">
+
+							<svg class="margin-r" fill="currentColor" xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="48"><path d="M480 1016q23 0 46-3t46-8q86 67 192.5 46.5T927 937q44-74 30-158t-78-142v-3q64-57 77.5-141T927 335q-37-63-101.5-94.5T689 218q-32-57-87.5-89.5T480 96q-66 0-121.5 32.5T271 218q-72-9-136.5 22.5T33 335q-43 74-29.5 158T81 634v3Q17 695 3 779t30 158q56 94 162.5 114.5t192.914-46.5q22.586 5 45.586 8t46 3Zm0-60q-142.375 0-241.188-98.812Q140 758.375 140 616q0-124 77-216.5T411 283q-1 6-1 11.5V306q0 97.837 68.582 166.418Q547.163 541 645 541q45 0 83-14.5t67-39.5q12 30 18.5 62.5T820 616q0 142.375-98.812 241.188Q622.375 956 480 956ZM353.775 713Q331 713 315.5 697.275q-15.5-15.726-15.5-38.5Q300 636 315.725 620.5q15.726-15.5 38.5-15.5Q377 605 392.5 620.725q15.5 15.726 15.5 38.5Q408 682 392.275 697.5q-15.726 15.5-38.5 15.5Zm253 0Q584 713 568.5 697.275q-15.5-15.726-15.5-38.5Q553 636 568.725 620.5q15.726-15.5 38.5-15.5Q630 605 645.5 620.725q15.5 15.726 15.5 38.5Q661 682 645.275 697.5q-15.726 15.5-38.5 15.5Z"/></svg>
+
+
+							VTUBER PRODUCTS</span>
+							<div class="folder-items">
+							<span><a href="#fullvtube">FULL VTUBE</a></span>
+							<span><a href="#model">MODEL</a></span>
+							<span><a href="#rig">RIGGING</a></span>
+							<span><a href="#adop">ADOPTABLES</a></span>
+							</div>
+						</div>
+
+						<div class="folder">
+							<span class="title-folder border b-purple">
+
+							<svg class="margin-r" xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-grid-fill" viewBox="0 0 16 16">
+							<path d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zm8 0A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm-8 8A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm8 0A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3z"/>
+							</svg>
+
+
+							ASSETS</span>
+							<div class="folder-items">
+							<span><a href="#emo">EMOJIS</a></span>
+							<span><a href="#back">BACKGROUNDS</a></span>
+							<span><a href="#over">OVERLAYS</a></span>
+							<span><a href="#tranz">TRANSITIONS</a></span>
+							</div>
+						</div>
+
+						<div class="folder">
+							<span class="title-folder border b-purple">
+
+							<svg class="margin-r" xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-patch-plus-fill" viewBox="0 0 16 16">
+							  <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zM8.5 6v1.5H10a.5.5 0 0 1 0 1H8.5V10a.5.5 0 0 1-1 0V8.5H6a.5.5 0 0 1 0-1h1.5V6a.5.5 0 0 1 1 0z"/>
+							</svg>
+
+							EXTRA</span>
+							<div class="folder-items">
+							<span><a href="#miss">VOICE ACTING</a></span>
+							<span><a href="#miss">WRITING</a></span>
+							<span><a href="#miss">CODING</a></span>
+							</div>
+						</div>
+					</section>
+				</div>
+
+
+			</div>
+
+	<!--Button holder-->
+	<div class="navbar-button-holder">
+		<a onclick="bar()" class="btn background shadow border red b-red full-rounded" href="#">
+		<svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
+    	<path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+
+		</svg>
+		</a>
+	</div>
+
+
+	<div class="button-holder">
+		<a  onclick="HomeToggle()" class="btn background shadow border yellow b-yellow full-rounded" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
+    	  <path d="M7.293 1.5a1 1 0 0 1 1.414 0L11 3.793V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v3.293l2.354 2.353a.5.5 0 0 1-.708.707L8 2.207 1.354 8.853a.5.5 0 1 1-.708-.707L7.293 1.5Z"/>
+  		  <path d="m14 9.293-6-6-6 6V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V9.293Zm-6-.811c1.664-1.673 5.825 1.254 0 5.018-5.825-3.764-1.664-6.691 0-5.018Z"/>
+
+
+		</svg>
+
+		<div id="products" class="popup-box yellow background border rounded b-yellow">HOME</div>
+		</a>
+				<a href="https://www.artstation.com/difer_artz" target="_blank" class="btn background shadow red border b-red full-rounded" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
+		  <path fill-rule="evenodd" d="M2 15.5V2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.74.439L8 13.069l-5.26 2.87A.5.5 0 0 1 2 15.5zM8.16 4.1a.178.178 0 0 0-.32 0l-.634 1.285a.178.178 0 0 1-.134.098l-1.42.206a.178.178 0 0 0-.098.303L6.58 6.993c.042.041.061.1.051.158L6.39 8.565a.178.178 0 0 0 .258.187l1.27-.668a.178.178 0 0 1 .165 0l1.27.668a.178.178 0 0 0 .257-.187L9.368 7.15a.178.178 0 0 1 .05-.158l1.028-1.001a.178.178 0 0 0-.098-.303l-1.42-.206a.178.178 0 0 1-.134-.098L8.16 4.1z"/>
+		</svg>
+
+		<div class="popup-box red background border rounded b-red">PORTFOLIO</div>
+		</a>
+				<a onclick="contactToggle()" class="btn background shadow border blue b-blue full-rounded" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
+		    <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+
+		</svg>
+
+		<div class="popup-box background border rounded blue b-blue">CONTACT</div>
+		</a>
+	</div>
+</div>
+
+<!-- Contact-->
+<div id="contact" class="content background order hidden">
+
+
+	<div class="holder">
+	<section class="text-capsule subtitle bottom-border b-yellow"><h2 class="white">// CONTACT</h2></section>
+
+	<a style="cursor:pointer" href="https://youtu.be/QH2-TGUlwu4" target="_blank">
+		<img class="pfp-pic background full-rounded" src="Assets/imgs/boop.png">
+	</a>
+		
+	<section class="big-btn-holder">
+			<a href="https://discord.gg/FsWUAT645X" target="_blank" class="btn big-btn purple border shadow rounded">DISCORD</a>
+			<a href="https://twitter.com/Difer_Artz" target="_blank" class="btn big-btn blue border shadow rounded">TWITTER</a>
+			<a href="mailto:diferartz@gmail.com" target="_blank" class="btn big-btn red border shadow rounded">EMAIL</a>
+	</section>
+
+	</div>
+
+	<div class="button-holder">
+		<a  onclick="HomeToggle()" class="btn background shadow border yellow b-yellow full-rounded" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
+    	  <path d="M7.293 1.5a1 1 0 0 1 1.414 0L11 3.793V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v3.293l2.354 2.353a.5.5 0 0 1-.708.707L8 2.207 1.354 8.853a.5.5 0 1 1-.708-.707L7.293 1.5Z"/>
+  		  <path d="m14 9.293-6-6-6 6V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V9.293Zm-6-.811c1.664-1.673 5.825 1.254 0 5.018-5.825-3.764-1.664-6.691 0-5.018Z"/>
+
+
+		</svg>
+
+		<div id="products" class="popup-box yellow background border rounded b-yellow">HOME</div>
+		</a>
+		  <a href="https://www.artstation.com/difer_artz" target="_blank" class="btn background shadow red border b-red full-rounded" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
+		  <path fill-rule="evenodd" d="M2 15.5V2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.74.439L8 13.069l-5.26 2.87A.5.5 0 0 1 2 15.5zM8.16 4.1a.178.178 0 0 0-.32 0l-.634 1.285a.178.178 0 0 1-.134.098l-1.42.206a.178.178 0 0 0-.098.303L6.58 6.993c.042.041.061.1.051.158L6.39 8.565a.178.178 0 0 0 .258.187l1.27-.668a.178.178 0 0 1 .165 0l1.27.668a.178.178 0 0 0 .257-.187L9.368 7.15a.178.178 0 0 1 .05-.158l1.028-1.001a.178.178 0 0 0-.098-.303l-1.42-.206a.178.178 0 0 1-.134-.098L8.16 4.1z"/>
+		</svg>
+
+		<div class="popup-box red background border rounded b-red">PORTFOLIO</div>
+		</a>
+		<a  onclick="productsToggle()" class="btn background shadow border purple b-purple full-rounded" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
+    	<path d="M11.5 4v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5ZM8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1Zm0 6.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
+
+		</svg>
+
+		<div class="popup-box purple background border rounded b-purple">PRODUCTS</div>
+		</a>
+	</div>
+</div>
+
+
+
+</body>
+
+<script async defer src="https://apis.google.com/js/api.js" onload="gapiLoaded()"></script>
+<script async defer src="https://accounts.google.com/gsi/client" onload="gisLoaded()"></script>
+
+<script type="text/javascript">
+	
+
+	var navbar = document.getElementById('navbar');
+	var products = document.getElementById('products');
+	var main = document.getElementById('main');
+	var contact = document.getElementById('contact');
+
+	navbar.style.top = '-100%';
+
+	function bar(){
+
+		if (navbar.style.top == '-100%') {
+			navbar.style.top = '-6%';
+
+		}else{
+			navbar.style.top = '-100%';
+		}
+
+	}
+
+	function HomeToggle(){
+
+			if (contact.classList.contains('hidden') == true) {
+				//maitains hidden
+			}else{
+				contact.classList.add('hidden');
+			}
+
+			if (products.classList.contains('hidden') == true) {
+				//maitains hidden
+			}else{
+				products.classList.add('hidden');
+			}
+			main.classList.remove('hidden');
+
+	}
+
+
+	function productsToggle(){
+
+			if (main.classList.contains('hidden') == true) {
+				//maitains hidden
+			}else{
+				main.classList.add('hidden');
+			}
+
+			if (contact.classList.contains('hidden') == true) {
+				//maitains hidden
+			}else{
+				contact.classList.add('hidden');
+			}
+			products.classList.remove('hidden');
+	} 
+
+	function contactToggle(){
+			if (main.classList.contains('hidden') == true) {
+				//maitains hidden
+			}else{
+				main.classList.add('hidden');
+			}
+
+			if (products.classList.contains('hidden') == true) {
+				//maitains hidden
+			}else{
+				products.classList.add('hidden');
+			}
+			contact.classList.remove('hidden');
+	}
+
+
+</script>
+
+</html>

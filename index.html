@@ -996,7 +996,7 @@
 		</section>
 
 	</div>
-	<div id="navbar" class="navbar border b-red">
+	<div id="navbar" class="navbar border b-red hidden-navbar">
 				
 
 				<div>
@@ -1172,10 +1172,12 @@
 	function bar(){
 
 		if (navbar.style.top == '-100%') {
+			navbar.style.opacity = '1';
 			navbar.style.top = '-6%';
 
 		}else{
 			navbar.style.top = '-100%';
+			navbar.style.opacity = '0';
 		}
 
 	}

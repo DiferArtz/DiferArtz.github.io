@@ -262,10 +262,6 @@ a{
 
 }
 
-.hidden{
-	display: none;
-}
-
 .headline{
 	background: $red;
 
@@ -438,9 +434,10 @@ h2{
 	top: -100%;
 	width: 50rem;
 	height: 90%;
+	opacity: 0;
 
 
-	transition: top 0.5s, width 0.5s;
+	transition: top 0.5s, width 0.5s, opacity 0.5s;
 
 	position: absolute;
 
@@ -708,6 +705,11 @@ table{
 	font-size: 125%;
 }
 
+.pfp-pic{
+	width: 25rem;
+	height: 25rem;
+}
+
 
 }
 
@@ -745,12 +747,144 @@ table{
 	flex-direction: column;
 	}
 
+	.pfp-pic{
+	width: 20rem;
+	height: 20rem;
+	}
+
+
 }
 
 
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 450px) {
 	.logo{
 		width: 100%;
 	}
+
+	*{
+		font-size: 100%;
+	}
+
+	.holder{
+		width: 100%;
+		padding: 0;
+	}
+
+	.logo-section{
+		height: 35%;
+
+	}
+
+	.title{
+		font-size: 100%;
+	}
+
+	.pill{
+		font-size: 125%;
+	}
+
+	.logo{
+		width: 55%;
+		transform: rotate(90deg);
+	}
+
+	.big-btn{
+		width: 80%;
+		font-size: 125%;
+	}
+
+	.content{
+		width: 100%;
+
+	}
+
+	//navbar
+
+	.folder{
+		width: 100%;
+	}
+
+	.navbar-button-holder{
+		transform: scale(0.8);
+		width: 15rem;
+	}
+
+	.content{
+		padding: 0.2rem;
+		height: 100%;
+		width: 100%;
+		border-radius: 0;
+	}
+
+	.button-holder{
+		transform: scale(0.8);
+		align-self: flex-end;
+		width: 15rem;
+	}
+
+	.svg1, .svg2{
+
+	}
+
+	.navbar{
+		margin-top: 2rem;
+		height: 100%;
+
+		width: 40rem;
+
+		font-size: 70%;
+	}
+
+	.navbar-list{
+		top: 2rem;
+		transform: scale(0.7);
+
+		width: 100%;
+		height: 50%;
+	}
+
+	.folder-items{
+		font-size: 125%;
+	}
+
+	.folder:active, .folder:hover{
+			border-left: 0.2rem solid rgb(18, 235, 255);
+
+		.folder-items{
+			opacity: 1;
+			height: 10rem;
+			overflow: hidden;
+
+
+			span:hover{
+
+				transform: scale(1.1);
+
+				margin: 0.6rem;
+				width: 18.3rem;
+
+				border-left: 0.7rem solid rgb(252, 17, 150);
+
+			}
+		}
+	}
+
+	.text-capsule{
+		font-size: 100%;
+	}
+
+
+		.pfp-pic{
+	width: 15rem;
+	height: 15rem;
+	}
+
+
+
+}
+
+
+.hidden{
+	display: none;
 }

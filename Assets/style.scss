@@ -92,6 +92,17 @@ body{
 	@include centerit;
 }
 
+.link{
+	text-decoration: underline;
+	
+}
+
+.link:hover{
+	cursor: pointer;
+	transform: scale(1.2);
+	color: $yellow;
+}
+
 //color control
 
 .shadow{

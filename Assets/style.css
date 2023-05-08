@@ -46,6 +46,14 @@ body {
   justify-content: center;
   align-items: center; }
 
+.link {
+  text-decoration: underline; }
+
+.link:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  color: #ffac22; }
+
 .shadow {
   -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.9);
   -moz-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.9);

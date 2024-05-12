@@ -2280,6 +2280,7 @@ for (a = 0; a < zoomimg.length; a++) {
 		// Creates background for image, protects other images from being clicked
 		const backimg = document.createElement("div");
 		backimg.setAttribute('class', 'zoom-in-back show-zoom-in-back');
+		backimg.setAttribute('onclick', 'ImgBack()');
 		const mombutton = document.createElement("span");
 		mombutton.setAttribute('class','close-button');
 		const button = document.createElement("span");
@@ -2327,6 +2328,7 @@ for (z = 0; z < zoom_emoji.length; z++) {
 		// Creates background for image, protects other images from being clicked
 		const backimg = document.createElement("div");
 		backimg.setAttribute('class', 'zoom-in-back show-zoom-in-back');
+		backimg.setAttribute('onclick', 'ImgBack()');
 		const mombutton = document.createElement("span");
 		mombutton.setAttribute('class','close-button');
 		const button = document.createElement("span");
